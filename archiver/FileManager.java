@@ -1,4 +1,4 @@
-package com.javarush.task.task31.task3110;
+package archiver;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileManager {
-    private Path rootPath;
-    private List<Path> fileList;
+    private final Path rootPath;
+    private final List<Path> fileList;
 
     public FileManager(Path rootPath) throws IOException {
         this.rootPath = rootPath;
